@@ -1,0 +1,22 @@
+name: Debug Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Make a dummy commit
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          echo "Test push" >> test-file.txt
+          git add test-file.txt
+          git commit -m "Testing push from CI"
+          git push origin main
