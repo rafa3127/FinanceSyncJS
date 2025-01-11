@@ -1,6 +1,6 @@
 {
   "name": "financesyncjs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A seamless integration layer between BalanceBookJS and Firebase for persistent financial data storage.",
   "type": "module",
   "main": "index.js",
