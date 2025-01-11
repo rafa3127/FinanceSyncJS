@@ -1,0 +1,3 @@
+- add documentation to README.md
+- add CICD to deploy in npmjs
+- add contribution flow
