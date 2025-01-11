@@ -25,14 +25,19 @@ const common = {
 const esmConfig = {
   ...common,
   output: {
-    filename: 'index.esm.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'lib'),
-    libraryTarget: 'module'
+    library: {
+      type: 'module'
+    }
   },
   experiments: {
     outputModule: true
   },
-  target: 'web',  // Ajusta para compatibilidad web
+  optimization: {
+    minimize: false
+  },
+  target: ['web', 'es5'],
 };
 
 module.exports = [esmConfig];
