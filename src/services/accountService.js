@@ -37,14 +37,14 @@ async function listAccounts(filters = {}) {
     const { userId, type, ...rest } = filters
 
     if (userId) {
-        q = query(q, where("userId", "==", filters.userId));
+        q = query(q, where("userId", "==", userId));
     }
 
     if (type) {
-        q = query(q, where("type", "==", filters.type));
+        q = query(q, where("type", "==", type));
     }
 
-    Object.entries( ...rest ).forEach( ([key, value]) => {
+    Object.entries( rest ).forEach( ([key, value]) => {
         q = query(q, where( key, "==", value))
     })
 
