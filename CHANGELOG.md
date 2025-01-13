@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.3...v1.1.4) (2025-01-13)
+
+
+### Bug Fixes
+
+* **services:** fixed iteration issue ([2b92025](https://github.com/rafa3127/FinanceSyncJS/commit/2b92025c302bc68e3aa9942bbaf1407417cf532b))
+
 ## [1.1.3](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.2...v1.1.3) (2025-01-13)
 
 
