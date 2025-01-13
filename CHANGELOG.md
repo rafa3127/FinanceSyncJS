@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.2...v1.1.3) (2025-01-13)
+
+
+### Bug Fixes
+
+* **Account:** handle type in account constructor ([62cc599](https://github.com/rafa3127/FinanceSyncJS/commit/62cc599a27e85fc37ea915ccaeaed34b27f40402))
+
 ## [1.1.2](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.1...v1.1.2) (2025-01-13)
 
 
