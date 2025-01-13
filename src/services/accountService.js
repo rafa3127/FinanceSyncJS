@@ -49,6 +49,7 @@ async function listAccounts(filters = {}) {
     })
 
     const querySnapshot = await getDocs(q);
+    
     return querySnapshot.docs.map(doc => new Account({ id: doc.id, ...doc.data() }));
 }
 
