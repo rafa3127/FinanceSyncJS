@@ -15,13 +15,13 @@ class Account extends BaseAccount {
      * @param {boolean} data.isDebitPositive - Indicates if debit balances are positive.
      * @param {string} data.type - The type of the account (e.g., 'asset', 'liability').
      */
-    constructor(data) {
-        const { id, userId, type, name, initialBalance, isDebitPositive, ...rest } = data
+    constructor(originalData) {
+        const { id, userId, type, name, initialBalance, isDebitPositive, data = {}, ...rest } = originalData
         super(name, initialBalance, isDebitPositive);
         this.id = id;
         this.userId = userId; // Add userId to the account properties
         this.type = type;
-        this.data = rest
+        this.data = {...data,...rest}
     }
 
     /**
