@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rafa3127/FinanceSyncJS/compare/v1.0.0...v1.1.0) (2025-01-13)
+
+
+### Features
+
+* **Account:** handled extra data for account information ([79b00f1](https://github.com/rafa3127/FinanceSyncJS/commit/79b00f1c0e8a7c52298af6e04ca12fff529ae6a8))
+
 # 1.0.0 (2025-01-11)
 
 
