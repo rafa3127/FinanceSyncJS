@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.4...v1.1.5) (2025-01-13)
+
+
+### Bug Fixes
+
+* **Account:** fixed data prop handling ([f912507](https://github.com/rafa3127/FinanceSyncJS/commit/f912507f852d839adca59c14bbfb4f5d979a53f5))
+
 ## [1.1.4](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.3...v1.1.4) (2025-01-13)
 
 
