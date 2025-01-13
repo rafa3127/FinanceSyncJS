@@ -16,10 +16,12 @@ class Account extends BaseAccount {
      * @param {string} data.type - The type of the account (e.g., 'asset', 'liability').
      */
     constructor(data) {
-        super(data.name, data.initialBalance, data.isDebitPositive);
-        this.id = data.id;
-        this.userId = data.userId; // Add userId to the account properties
-        this.type = data.type;
+        const { name, initialBalance, isDebitPositive, ...rest } = data
+        super(name, initialBalance, isDebitPositive);
+        this.id = id;
+        this.userId = userId; // Add userId to the account properties
+        this.type = type;
+        rhis.data = res
     }
 
     /**
@@ -57,7 +59,8 @@ class Account extends BaseAccount {
             name: this.name,
             balance: this.getBalance(),
             isDebitPositive: this.isDebitPositive,
-            type: this.type // Include the type in the serialized data
+            type: this.type, // Include the type in the serialized data
+            data: this.data
         };
     }
 }
