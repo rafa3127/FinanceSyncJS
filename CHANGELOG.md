@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.5...v1.1.6) (2025-01-13)
+
+
+### Bug Fixes
+
+* **Account:** handle balance as main prop ([1fb680e](https://github.com/rafa3127/FinanceSyncJS/commit/1fb680e832c47be577a7c04abab3c600b97e8b70))
+
 ## [1.1.5](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.4...v1.1.5) (2025-01-13)
 
 
