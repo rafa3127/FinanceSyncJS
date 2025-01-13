@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.1...v1.1.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* **Account:** Added handles to id and userId in account constructor ([c210d31](https://github.com/rafa3127/FinanceSyncJS/commit/c210d3154c03346a80bd5f0c6e2de7c8e135e820))
+
 ## [1.1.1](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.0...v1.1.1) (2025-01-13)
 
 
