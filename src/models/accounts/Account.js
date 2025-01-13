@@ -16,8 +16,8 @@ class Account extends BaseAccount {
      * @param {string} data.type - The type of the account (e.g., 'asset', 'liability').
      */
     constructor(originalData) {
-        const { id, userId, type, name, initialBalance, isDebitPositive, data = {}, ...rest } = originalData
-        super(name, initialBalance, isDebitPositive);
+        const { id, userId, type, name, initialBalance, balance, isDebitPositive, data = {}, ...rest } = originalData
+        super(name, initialBalance || balance, isDebitPositive);
         this.id = id;
         this.userId = userId; // Add userId to the account properties
         this.type = type;
