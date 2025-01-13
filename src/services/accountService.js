@@ -34,13 +34,19 @@ async function listAccounts(filters = {}) {
     const accountsRef = collection(db, 'accounts');
     let q = query(accountsRef);
 
-    if (filters.userId) {
+    const { userId, type, ...rest } = filters
+
+    if (userId) {
         q = query(q, where("userId", "==", filters.userId));
     }
 
-    if (filters.type) {
+    if (type) {
         q = query(q, where("type", "==", filters.type));
     }
+
+    Object.entries( ...rest ).forEach( ([key, value]) => {
+        q = query(q, where( key, "==", value))
+    })
 
     const querySnapshot = await getDocs(q);
     return querySnapshot.docs.map(doc => new Account({ id: doc.id, ...doc.data() }));
