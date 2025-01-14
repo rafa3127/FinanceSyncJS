@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.5...v1.2.0) (2025-01-14)
+
+
+### Bug Fixes
+
+* **Account:** handle balance as main prop ([1fb680e](https://github.com/rafa3127/FinanceSyncJS/commit/1fb680e832c47be577a7c04abab3c600b97e8b70))
+
+
+### Features
+
+* **JournalEntryService:** added journal entry services ([1e89e61](https://github.com/rafa3127/FinanceSyncJS/commit/1e89e61fa050f1a8a005a279ba2762cce0a30d0b))
+
 ## [1.1.6](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.5...v1.1.6) (2025-01-13)
 
 
