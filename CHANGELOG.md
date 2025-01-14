@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/rafa3127/FinanceSyncJS/compare/v1.2.0...v1.2.1) (2025-01-14)
+
+
+### Bug Fixes
+
+* **JournalEntry:** fixed constructor docs ([0b2b0fc](https://github.com/rafa3127/FinanceSyncJS/commit/0b2b0fca3b6d16b3acf376d8b670be7b3a72a3e3))
+
 # [1.2.0](https://github.com/rafa3127/FinanceSyncJS/compare/v1.1.5...v1.2.0) (2025-01-14)
 
 
