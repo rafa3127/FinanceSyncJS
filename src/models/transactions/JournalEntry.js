@@ -3,9 +3,13 @@ import { createJournalEntry, updateJournalEntry } from '../../firebase/firebaseU
 import { getAccountById } from '../../services/accountService.js';
 
 /**
- * Represents a journal entry with Firebase integration, including user identification.
- * @extends {BaseJournalEntry}
- */
+     * Creates an instance of Journal Entry.
+     * @param {Object} data - The data to initialize the journal entry.
+     * @param {string} [data.id] - The Firebase document ID, if already exists.
+     * @param {string} data.userId - The ID of the user who owns the journal entry.
+     * @param {string} data.description - The description of the journal entry.
+     * @param {Date} data.date - The date of the journal entry.
+     */
 class JournalEntry extends BaseJournalEntry {
     constructor(originalData) {
       const {description, userId, date = new Date(), data = {}, ...rest} = originalData
