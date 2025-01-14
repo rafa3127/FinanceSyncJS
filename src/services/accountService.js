@@ -19,10 +19,6 @@ async function getAccountById(id) {
 }
 
 /**
- * Retrieves a list of all accounts from Firebase.
- * @returns {Promise<Account[]>} A promise that resolves with an array of Account instances.
- */
-/**
  * Retrieves a list of accounts from Firebase based on provided filters.
  * @param {Object} filters - The filters to apply for the accounts.
  * @param {string} [filters.userId] - The user ID to filter accounts by.

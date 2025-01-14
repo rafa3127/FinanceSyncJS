@@ -9,6 +9,7 @@ import { initFirebase, getFirebaseApp } from './firebase/firebaseConfig.js';
 
 //SERVICES
 import { listAccounts, getAccountById } from './services/accountService.js';
+import { listJournalEntries, getJournalEntryById } from './services/journalEntryService.js'
 
 //TRANSACTIONS
 import { JournalEntry  } from './models/transactions/JournalEntry.js';
@@ -22,7 +23,9 @@ const transactions = {
 
 const srv = {
     listAccounts,
-    getAccountById
+    getAccountById,
+    listJournalEntries,
+    getJournalEntryById
 }
 
 export {

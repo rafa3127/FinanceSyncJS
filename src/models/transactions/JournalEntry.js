@@ -7,9 +7,12 @@ import { getAccountById } from '../../services/accountService.js';
  * @extends {BaseJournalEntry}
  */
 class JournalEntry extends BaseJournalEntry {
-    constructor(description, userId, date = new Date()) {
+    constructor(originalData) {
+      const {description, userId, date = new Date(), data = {}, ...rest} = originalData
+
         super(description, date);
         this.userId = userId; // Add userId to journal entry properties
+        this.data = {...data, ...rest}
     }
 
     async save() {
