@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/rafa3127/FinanceSyncJS/compare/v1.2.1...v1.2.2) (2025-04-22)
+
+
+### Bug Fixes
+
+* **CICD:** fake release to test CICD with branch protection ([1b9a572](https://github.com/rafa3127/FinanceSyncJS/commit/1b9a5728213c1a1c844f5a8f793b99761323ab16))
+* **CICD:** fake release to test CICD with branch protection ([fa6e7ed](https://github.com/rafa3127/FinanceSyncJS/commit/fa6e7edc18c381da0e271104f607da21d5d674b6))
+
 ## [1.2.1](https://github.com/rafa3127/FinanceSyncJS/compare/v1.2.0...v1.2.1) (2025-01-14)
 
 
