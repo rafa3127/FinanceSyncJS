@@ -37,10 +37,9 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-    
-    - name: Publish to npm
+    - name: Publish to npm and GitHub Release
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: npx semantic-release --debug
       env:
-        GITHUB_TOKEN: ${{ github.token }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_SEMANTIC_RELEASE_TOKEN }} 
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
