@@ -1,6 +1,6 @@
 # Contributing to FinanceSyncJS
 
-We appreciate your interest in contributing to FinanceSyncJS! To maintain the quality of our codebase and ensure consistent releases, we adhere to specific commit message conventions. This document outlines how to format your commit messages to comply with our workflow.
+We appreciate your interest in contributing to FinanceSyncJS! To maintain the quality of our codebase and ensure consistent releases, we adhere to specific commit message conventions based on Conventional Commits. This document outlines how to format your commit messages to comply with our workflow, which helps automate versioning and changelog generation.
 
 ## Commit Message Format
 
